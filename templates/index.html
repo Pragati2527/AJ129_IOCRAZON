@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container my-5">
+        <div class="row justify-content-around">
+            <div class="col-3 p-3 border border-secondary rounded">
+                <div class="row">
+                    <label for="inputAmount" class="form-label">Enter Amount:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputAmount" />
+                        <button id="submit" onclick="submit()" class="btn btn-success">Enter</button>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div style="display: inline;">Today's Price: <b>&#8377</b> <b id="curPrice">72.5</b></div>
+                </div>
+            </div>
+            <div class="col-4 mx-1 p-3 border border-secondary rounded">
+                <div class="row">
+                    <div style="display: inline;">Date: <b id="dateDiv"></b></div>
+                </div>
+                <div class="row my-3">
+                    <div style="display: inline;">Total Litre: <b id="totalDiv"></b>    <b>L</b></div>
+                </div>
+                <div id="readingDiv" class="row text-center" style="display: none;">
+                    <div id="reading"></div>
+                </div>
+            </div>
+            <div class="col-3 p-3 border border-secondary rounded">
+                <div class="row px-2">
+                    Quality:
+                </div>
+                <div class="row mt-3 px-2">
+                    Density:
+                </div>
+            </div>
+        </div>
+        <div id="reading"></div>
+    </div>
+
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+</body>
+
+</html>

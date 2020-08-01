@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+#reading {
+  border: 1px dotted green;
+  margin: auto auto;
+  width: fit-content;
+  font-size: 2.5rem;
+  font-weight: 1.5rem;
+}

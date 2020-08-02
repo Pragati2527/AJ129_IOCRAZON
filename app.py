@@ -5,11 +5,17 @@ from boto3.dynamodb.conditions import Key
 from decimal import Decimal
 import uuid
 import smtplib
+import mysql.connector
 
 from flask_cors import CORS, cross_origin
 i=0
 dynamodb = boto3.resource('dynamodb')
 petrol_table = dynamodb.Table('petrol_data')
+
+mydb = mysql.connector.connect(
+   host='127.0.0.1', user='root', password='', database='petrol')
+mycursor = mydb.cursor()
+
 
 
 app = Flask(__name__)
@@ -75,11 +81,27 @@ def recieve_data():
             
         }
     )
+    mydb = mysql.connector.connect(
+        host='127.0.0.1', user='root', password='', database='petrol')
+    mycursor = mydb.cursor()
+    insert_stmt = (
+        "INSERT INTO petrol_data(date, tid, vid, amount, email)"
+        "VALUES (%s, %s, %s, %s, %s)"
+        )
+    data = ( date, tid, v_id, Decimal(entered_amount), request.values.get("email"))
+    mycursor.execute(insert_stmt, data)
+    mydb.commit()
+        
     sendEmail(request.values.get("email"),date,entered_amount,tid_s,v_id)
 
     print(date,entered_amount)
     
     return str(res),200
+#==========================================================================
+
+
+
+
 @app.route("/get_sum",methods=["POST"])
 def get_sum():
      date = request.get_json()

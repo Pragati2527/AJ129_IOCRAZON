@@ -26,6 +26,9 @@ HERE,FLOW RATE SENSOR IS A MODULE WORKS ON THE PRINCIPLE OF HALL EFFECT TO MEASU
 Fuel quality sometimes IS not as per the standard or chance of adulteration is there which again causes trouble like IMPROPER functioning of vehicle, paying FOR GOOD QUALITY fuel but getting adulterated ONE WHICH has  severe effects like increased toxicity IN  air, DECREASE IN ENGINE LIFE and many OTHER environmental PROBLEMS LIKE GLOBAL WARMING,OZONE POLLUTION ETC.
 HENCE, FOR QUALITY PURPOSE WE HAVE DESIGNED A SETUP USING LOAD CELL TO MEASURE THE DENSITY OF FUEL ADDED. ALONGWITH IT, WE WILL USE TEMPERATURE SENSOR TO CALCULATE STANDARD DENSITY AT 15 C USING ASTM INTERCONVERSION TABLE  and astm standard WHICH ARE stored in memory OF OUR SOFTWARE TO calculate THE AMOUNT OF ADULTERANTS ADDED AND THE SAFE LIMIT OF FUEL.
 
+**Proposed Setup**
+
+![densityfi](https://user-images.githubusercontent.com/52466713/89117066-6910c880-d4b8-11ea-9f9d-0c270aceaaae.png)
 
 **SOFTWARE**
 

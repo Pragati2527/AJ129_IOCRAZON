@@ -6,7 +6,7 @@ So, is there any solution to address these problems?
 Ofcourse yes!
 Our team iocrazon is presented here to address all these problems.
 Let us look at the problem once again. It actually comprises of three segments:
-1. measurement of the quantity of fuel added in vehicle fuel tank
+1. Measurement of the quantity of fuel added in vehicle fuel tank
 2. detection of adulteration in the fuel
 3. need for the system which process all these information and display it to the customer on real time basis.
 

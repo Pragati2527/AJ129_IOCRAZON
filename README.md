@@ -36,7 +36,7 @@ HERE THE SETUP WE ARE DESIGNING COMES HANDY AND DURABLE. Data is collected at th
 
 **For Central Authority**
 
-                        ![3](https://user-images.githubusercontent.com/52466713/89124219-ece7a680-d4f2-11ea-9b7a-256a73fe7513.png)
+![3](https://user-images.githubusercontent.com/52466713/89124219-ece7a680-d4f2-11ea-9b7a-256a73fe7513.png)
 
 **FEATURES**
 

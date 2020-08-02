@@ -52,6 +52,7 @@ function ajaxSend(data) {
 function setDataSum(){
   var totalDiv = document.getElementById("totalDiv");
   var totalEntered = document.getElementById("inputAmount").value;
+
   var totalActual = totalDiv.innerText;
   var date = new Date();
   var day = date.getDate();
@@ -77,8 +78,9 @@ function setDataSum(){
   });
 }
 async function submit() {
-  setDataSum();
+//  setDataSum();
   var totalEntered = document.getElementById("inputAmount").value;
+var email = document.getElementById("email").value;
 
   // if (totalActual == "") {
   //   totalDiv.innerText = totalEntered;
@@ -96,6 +98,7 @@ async function submit() {
   var data = new FormData();
   data.append("date", updateDate());
   data.append("entered_amount", petrol);
+data.append("email",email);
   ajaxSend(data);
  await runMeter(petrol);
 

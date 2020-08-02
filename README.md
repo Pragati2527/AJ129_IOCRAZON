@@ -9,8 +9,6 @@ Let us look at the problem once again. It actually comprises of three segments:
 2. detection of adulteration in the fuel
 3. need for the system which process all these information and display it to the customer on real time basis.
 
-Now, lets discuss about the solution for each and every segment one by one
-
 **QUANTITY**
 
 Quantity measurements provided, many times are not upto the mark of customer satisfaction . it includes frauds resulting in  paying for more and getting somewhat less.

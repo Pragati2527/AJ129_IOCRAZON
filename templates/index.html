@@ -19,9 +19,12 @@
                 <div class="row">
                     <label for="inputAmount" class="form-label">Enter Amount:</label>
                     <div class="input-group">
-                        <input type="text" class="form-control" id="inputAmount" />
+                        <input type="text" class="form-control" id="inputAmount" /><br><br>                        
+                      
                         <button id="submit" onclick="submit()" class="btn btn-success">Enter</button>
                     </div>
+                    <div>
+                      <input type="text" class="form-control" id="email" placeholder="enter email"/></div>
                 </div>
                 <div class="row mt-3">
                     <div style="display: inline;">Today's Price: <b>&#8377</b> <b id="curPrice">72.5</b></div>
@@ -31,9 +34,11 @@
                 <div class="row">
                     <div style="display: inline;">Date: <b id="dateDiv"></b></div>
                 </div>
-                <div class="row my-3">
+<!--
+                <div class="row my-3" vi>
                     <div style="display: inline;">Total Litre: <b id="totalDiv"></b>    <b>L</b></div>
                 </div>
+-->
                 <div id="readingDiv" class="row text-center" style="display: none;">
                     <div id="reading"></div>
                 </div>

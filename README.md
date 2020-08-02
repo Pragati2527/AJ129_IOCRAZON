@@ -19,7 +19,7 @@ HERE,FLOW RATE SENSOR IS A MODULE WORKS ON THE PRINCIPLE OF HALL EFFECT TO MEASU
 
 **Proposed Setup**
 
-https://user-images.githubusercontent.com/52466713/89117050-34047600-d4b8-11ea-8c76-0759b676f44c.png
+![quantity](https://user-images.githubusercontent.com/52466713/89117050-34047600-d4b8-11ea-8c76-0759b676f44c.png)
 
 **QUALITY**
 

@@ -60,7 +60,7 @@ def recieve_data():
     entered_amount = request.values.get('entered_amount','0.0')
     tid_s=''
     v_id='Vendor 1'
-    for i in range(0, 10, 1):
+    for i in range(0, 500, 1):
         tid = uuid.uuid4()
         tid = str(tid)
         tid_s = tid
@@ -70,7 +70,8 @@ def recieve_data():
             'Date': date,
             'TID': tid,
             'Quantity': Decimal(entered_amount),
-            'VID':v_id
+            'VID':v_id,
+            'Email': request.values.get("email")
             
         }
     )
@@ -89,6 +90,7 @@ def get_sum():
      res = response['Items']
 
      sum=0;
+    
      for r in res:
          sum = sum+ r["Quantity"]
 
@@ -96,9 +98,22 @@ def get_sum():
      return str(sum),200
     
                     
-@app.route("/get",methods=["GET"])
+@app.route("/get",methods=["POST"])
 def get1():
-    return "hello"
+
+    r = petrol_table.scan()
+    email = request.get_json().get("email")
+    i=0
+    response_s = []
+    r=r["Items"]
+    for x in r:
+        if 'Email' in x:
+               
+            if x["Email"] == email:
+                response_s.append( x)
+                i = i+1
+        
+    return str(response_s)
 
     
 # print(json_list)

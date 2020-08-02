@@ -17,6 +17,10 @@ Quantity measurements provided, many times are not upto the mark of customer sat
 IN THIS, A MODULE IS DESIGNED USING FLOW RATE SENSOR AND NODEMCU WHICH WILL BE USED AT THE TIME OF REFILLING TO CALCULATES THE AMOUNT OF FUEL ADDED ON A REAL TIME BASIS.
 HERE,FLOW RATE SENSOR IS A MODULE WORKS ON THE PRINCIPLE OF HALL EFFECT TO MEASURE THE flow OF  LIQUID FLOWING THROUGH IT.NODEMCU IS UESD TO SEND THE COMPLETE DETAILS ABOUT THE FUEL RECEIVED, ADULTERATION IN FUEL, CURRENT PRICE OF FUEL ETC. ON MOBILE APP OF CUSTOMER.
 
+**Proposed Setup**
+
+https://user-images.githubusercontent.com/52466713/89117050-34047600-d4b8-11ea-8c76-0759b676f44c.png
+
 **QUALITY**
 
 Fuel quality sometimes IS not as per the standard or chance of adulteration is there which again causes trouble like IMPROPER functioning of vehicle, paying FOR GOOD QUALITY fuel but getting adulterated ONE WHICH has  severe effects like increased toxicity IN  air, DECREASE IN ENGINE LIFE and many OTHER environmental PROBLEMS LIKE GLOBAL WARMING,OZONE POLLUTION ETC.

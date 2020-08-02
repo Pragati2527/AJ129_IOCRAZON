@@ -58,7 +58,7 @@ g. LOSSLESS SIGNAL TRANSMISSION
 
 1.Digital monitor for fuel dispenser unit to maintain logistics and demand estimation : Our device will send datas like daily fuel consumption, Total Fuel quantity  received at one dispensing unit & total quantity given to customer periodically , the price at which fuel is given, the density of fuel etc.  to the server of the centralised authority.
 
-2.Customer friendly as free from human interference
+2.Customer friendly as free from human interference.
 
 **FUTURE SCOPE**
 

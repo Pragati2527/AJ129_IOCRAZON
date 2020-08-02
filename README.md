@@ -1,4 +1,5 @@
 # AJ129_IOCRAZON
+
 In February, Union oil minister Dharmendra Pradhan shared the data of petrol pump frauds of different states. Delhi alone reported 785 cases of short-fuelling at petrol pumps between April 2014 and December 2017. It was behind Maharashtra and Uttar Pradesh with 1,560 and 913 cases, respectively. And this is the data which shows the number of registered cases. However, there must be a huge chunk of cases that go unreported without complaining, and hence, without taking a particular action. Still, Problem doesn’t ends here.
 There is one more problem which not only increases the burden on consumer’s pocket but also contribute to environmental pollution on large scale: i.e. emission of harmful effluents due to the use of adulterated fuel.
 So, is there any solution to address these problems?
@@ -32,6 +33,9 @@ HENCE, FOR QUALITY PURPOSE WE HAVE DESIGNED A SETUP USING LOAD CELL TO MEASURE T
 
 This segment WILL addresS the problem of  things GETTING done  automatically without human interference. Present day technology is manual where we use chemical properties of volatility and colour to detect fuel quality AND MANUAL TESTING OF FUEL.
 HERE THE SETUP WE ARE DESIGNING COMES HANDY AND DURABLE. Data is collected at the time of refilling and  stored at database from where it will be fetched and displayed on customer mobile app. The complete Data will also be send to the central authority server with compleTE information about price, quality and Quantity of fuel ADDED AT THE GIVEN PETROL PUMP LOCATION.
+
+**For Authority**
+
 
 **FEATURES**
 

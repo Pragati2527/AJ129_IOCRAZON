@@ -35,6 +35,7 @@ This segment WILL addresS the problem of  things GETTING done  automatically wit
 HERE THE SETUP WE ARE DESIGNING COMES HANDY AND DURABLE. Data is collected at the time of refilling and  stored at database from where it will be fetched and displayed on customer mobile app. The complete Data will also be send to the central authority server with compleTE information about price, quality and Quantity of fuel ADDED AT THE GIVEN PETROL PUMP LOCATION.
 
 **For Central Authority**
+
 ![3](https://user-images.githubusercontent.com/52466713/89124219-ece7a680-d4f2-11ea-9b7a-256a73fe7513.png)
 
 **FEATURES**

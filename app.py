@@ -3,11 +3,17 @@ from flask import Flask, render_template, request
 import boto3
 from boto3.dynamodb.conditions import Key
 from decimal import Decimal
+import uuid
+import smtplib
 
+from flask_cors import CORS, cross_origin
+i=0
 dynamodb = boto3.resource('dynamodb')
-petrol_table = dynamodb.Table('Petrol_Pump_Table')
+petrol_table = dynamodb.Table('petrol_data')
+
 
 app = Flask(__name__)
+CORS(app)
 
 # def float_range(start, stop, step):
 #     while start < stop:
@@ -25,6 +31,23 @@ app = Flask(__name__)
 
 # json_list = list(map(json_data,seq))
 
+
+def sendEmail(email,date,am,tid,vid):
+    rec_email =email
+    sender_email = "piyushait12@gmail.com"
+    password ="qazmlp10"
+    message= " fuel - "+am+"\n"+"Date : -"+date+"\n"+"Transactio ID: "+tid+"\n"+"Vendor Id:"+vid
+
+    m="""
+    Subject: Fuel verification""" + message
+
+
+
+    server = smtplib.SMTP ('smtp.gmail.com', 587)
+    server.starttls()
+    server.login(sender_email, password)
+    server.sendmail (sender_email, rec_email, m)
+    print(" email.has been sent to" ,rec_email)
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -35,13 +58,23 @@ def recieve_data():
     # print(data)
     date = request.values.get('date')
     entered_amount = request.values.get('entered_amount','0.0')
-
+    tid_s=''
+    v_id='Vendor 1'
+    for i in range(0, 10, 1):
+        tid = uuid.uuid4()
+        tid = str(tid)
+        tid_s = tid
+        print(tid)
     res = petrol_table.put_item(
     Item={
             'Date': date,
-            'Quantity': Decimal(entered_amount)
+            'TID': tid,
+            'Quantity': Decimal(entered_amount),
+            'VID':v_id
+            
         }
-    )   
+    )
+    sendEmail(request.values.get("email"),date,entered_amount,tid_s,v_id)
 
     print(date,entered_amount)
     
@@ -63,7 +96,11 @@ def get_sum():
      return str(sum),200
     
                     
+@app.route("/get",methods=["GET"])
+def get1():
+    return "hello"
 
+    
 # print(json_list)
 
 if __name__ == "__main__":

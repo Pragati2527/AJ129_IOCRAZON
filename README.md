@@ -41,24 +41,35 @@ HERE THE SETUP WE ARE DESIGNING COMES HANDY AND DURABLE. Data is collected at th
 **FEATURES**
 
 a.CONSUMER SATISFACTION
+
 b.INSTANT AND INLINE MEASUREMENT OF QUANTITY
+
 c.PREVENT INCREASED NUMBER OF FUEL FRAUD
+
 d.FIRE PROOF AND HEAT PROOF AS THE POWER SUPPLY SOURCE USED HERE IS BATTERY WHICH IS PLACED SAFELY IN WELL INSULATED BOX
+
 e.ASTM STANDARD IS UESD FOR QUALITY DETECTION
+
 f.DURABLE CIRCUIT
+
 g.LOSSLESS SIGNAL TRANSMISSION
 
 **Novelty**
 
 1.Digital monitor for fuel dispenser unit to maintain logistics and demand estimation : Our device will send datas like daily fuel consumption, Total Fuel quantity  received at one dispensing unit & total quantity given to customer periodically , the price at which fuel is given, the density of fuel etc.  to the server of the centralised authority.
+
 2.Customer friendly as free from human interference
 
 **FUTURE SCOPE**
 
 1.WILL MAKE IT MOBILE APP ORIENTED
+
 2.FUEL ADULTERATION TESTING USING DENSITY AND TEMPERATURE WHICH IS MANUAL TODAY
+
 3.FURTHER OPTIMISATION
+
 4.WILL WORK FOR INCREASING ACCURACY OF THE FINAL PRODUCT
+
 5.WILL MAKE IT COMPACT AND BRING ALL THE COMPONENTS ON A SINGLE BOARD
 
 **CONCLUSION**

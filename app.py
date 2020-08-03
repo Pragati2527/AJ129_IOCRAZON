@@ -8,9 +8,11 @@ import smtplib
 import mysql.connector
 
 from flask_cors import CORS, cross_origin
+
+
 i=0
 dynamodb = boto3.resource('dynamodb')
-petrol_table = dynamodb.Table('petrol_data')
+petrol_table = dynamodb.Table('Petrol_Pump')
 
 mydb = mysql.connector.connect(
    host='127.0.0.1', user='root', password='', database='petrol')
@@ -136,9 +138,41 @@ def get1():
                 i = i+1
         
     return str(response_s)
+#==================================================================================================
+
+@app.route("/local",methods=["POST"])
+def local():
+    email = request.get_json().get("email")
+    query= "SELECT * FROM petrol_data WHERE email = '"+email+"'"
+    mydb = mysql.connector.connect(
+        host='127.0.0.1', user='root', password='', database='petrol')
+    mycursor = mydb.cursor()
+    r= mycursor.execute(query)
+  ##  sql_select_query = "SELECT * FROM petrol_data WHERE email = 'amirraaj0@gmail.com' "
+    ##mycursor.execute(sql_select_query, (email,))
+    record = mycursor.fetchall()
+    print(record)
+
+    i=0
+    response_s = []
+   
+    for x in record:
+        response_s.append({
+            "date":x[0],
+            "tid":x[1],
+            "vid":x[2],
+            "amount":x[3],
+            "email":x[4]})
+        
+    return str(response_s)
+
+
+
+
+
 
     
-# print(json_list)
+
 
 if __name__ == "__main__":
     app.run(debug=True)

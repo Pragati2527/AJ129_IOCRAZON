@@ -1,0 +1,51 @@
+<mvc:View controllerName="test.sih.test_sih.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Reconcile App">
+					<content>
+						<HBox>
+							<Input placeholder="Enter Email" id="email"></Input>
+							<Button text="Get Data" press="getData"></Button>
+						</HBox>
+						<Table id="list" inset="false" items="{ path: '/r' }">
+							<infoToolbar>
+								<OverflowToolbar>
+									<Label text="Entries"/>
+								</OverflowToolbar>
+							</infoToolbar>
+							<columns>
+								<Column >
+									<Text text="Match Status"/>
+								</Column>
+								<Column >
+									<Text text="Transaction ID"/>
+								</Column>
+								<Column >
+									<Text text="Date"/>
+								</Column>
+								<Column>
+									<Text text="Central DB Values (Govt)"></Text>
+								</Column>
+								<Column>
+									<Text text="Local DB Values (Vendor)"></Text>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<ObjectStatus class="sapUiSmallMarginBottom" text="{match}" state="{state}"/>
+										<Label text="{aws/TID}"></Label>
+										<Label text="{aws/Date}"></Label>
+										<ObjectIdentifier title="{aws/VID}" text="{aws/Quantity}"/>
+										<ObjectIdentifier title="{mysql/vid}" text="{mysql/amount}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
